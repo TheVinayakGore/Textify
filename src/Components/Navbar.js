@@ -1,14 +1,20 @@
 import React from 'react'
 import logo from '../logo.png'
+import logo2 from '../logo2.webp'
+import { BsMoonStars } from "react-icons/bs";
+import { FiSun } from "react-icons/fi";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <>
-      <nav className='flex items-center justify-between m-auto space-x-5 sticky top-0 p-3 px-20 bg-zinc-200/[0.3] backdrop-blur-sm'>
+      <nav className={`flex items-center justify-between m-auto space-x-5 sticky top-0 py-2 px-10 ${props.mode === 'light' ? 'bg-zinc-200/[0.6]' : 'bg-zinc-800/[0.7]'} backdrop-blur-[2px] w-full transition duration-300`}>
         <div className='flex items-center space-x-2'>
-          <a href="/"><img src={logo} alt="logo" className='w-7' /></a>
-          <a href="/" className='text-xl font-medium'>Textify</a>
+          <a href="/"><img src={props.mode === 'light' ? logo : logo2} alt="logo" className='w-7' /></a>
+          <a href="/" className={`text-2xl ${props.mode === 'light' ? 'text-black' : 'text-white'} font-medium`}>Textify</a>
         </div>
+        <button onClick={props.toggelMode} className={`p-1 ${props.mode === 'light' ? 'hover:bg-zinc-200' : 'hover:bg-zinc-800'} rounded-full text-${props.mode === 'light' ? 'dark' : 'light'} transition duration-300`}>
+          {props.mode === 'dark' ? <FiSun className='p-[0.4rem] w-9 h-9' /> : <BsMoonStars className='p-[0.4rem] w-9 h-9' />}
+        </button>
       </nav>
     </>
   )
