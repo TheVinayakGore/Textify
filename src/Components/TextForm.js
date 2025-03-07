@@ -39,7 +39,7 @@ export default function TextForm(props) {
 
     return (
         <>
-            <div id="start" className={`p-20 border-t ${props.mode === 'light' ? 'border-zinc-200' : 'border-zinc-800'}`}>
+            <main id="start" className="container py-20 m-auto">
                 <Toaster position="top-right" reverseOrder={false} />
                 <h1 className={`text-5xl ${props.mode === 'light' ? 'text-blue-600' : 'text-white'} font-medium mb-1`}>TEXTIFY</h1>
                 <p className={`text-lg font-light ${props.mode === 'light' ? 'text-black' : 'text-zinc-500'} mb-5`}>Word counter | Character counter | Remove extra spaces</p>
@@ -106,7 +106,7 @@ export default function TextForm(props) {
                     <h4 className="font-semibold mt-2">Preview text :</h4>
                     <p className="mt-1">{text.length > 0 ? text : "Nothing to Preview"}</p>
                 </div>
-            </div>
+            </main>
         </>
     );
 }

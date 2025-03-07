@@ -6,7 +6,6 @@ import { MdDownload } from "react-icons/md";
 import { BiSolidEraser } from "react-icons/bi";
 
 const TextInput = (props) => {
-
     const [title, setTitle] = useState('');
     const [desc, setDesc] = useState('');
 
@@ -47,7 +46,7 @@ const TextInput = (props) => {
 
     return (
         <>
-            <div className={`p-20 border-t ${props.mode === 'light' ? 'border-zinc-200' : 'border-zinc-800'}`}>
+            <main className="container m-auto py-20">
                 <Toaster position="top-right" reverseOrder={false} />
                 <h1 className={`text-5xl ${props.mode === 'light' ? 'text-blue-600' : 'text-white'} font-medium mb-1`}>TEXT TO PDF</h1>
                 <p className={`text-lg font-light ${props.mode === 'light' ? 'text-black' : 'text-zinc-500'} mb-5`}>Just paste the text below and convert pdf in one click.</p>
@@ -64,7 +63,7 @@ const TextInput = (props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </>
     )
 }
