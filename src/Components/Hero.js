@@ -20,7 +20,7 @@ const Hero = (props) => {
                         <div className="mt-10 flex justify-center md:justify-start space-x-4">
                             <a
                                 href="#start"
-                                className={`inline-flex items-center px-8 py-3 rounded-full font-semibold transition-all duration-300 ${props.mode === 'light'
+                                className={`inline-flex items-center px-12 py-3 rounded-full font-semibold transition-all duration-300 ${props.mode === 'light'
                                     ? 'bg-gradient-to-r from-pink-500 to-amber-500 text-white hover:bg-gradient-to-r hover:from-pink-600 hover:to-amber-600'
                                     : 'bg-gradient-to-r from-pink-600 to-amber-600 text-white hover:bg-gradient-to-r hover:from-pink-700 hover:to-amber-700'
                                     } shadow-lg hover:shadow-xl`}
@@ -29,7 +29,7 @@ const Hero = (props) => {
                             </a>
                             <a
                                 href="#contact"
-                                className={`inline-flex items-center px-8 py-3 rounded-full font-semibold transition-all duration-300 ${props.mode === 'light'
+                                className={`inline-flex items-center px-12 py-3 rounded-full font-semibold transition-all duration-300 ${props.mode === 'light'
                                     ? 'text-green-500 border border-green-500 hover:bg-green-500 hover:text-white'
                                     : 'text-green-400 border border-green-400 hover:bg-green-400 hover:text-white'
                                     } shadow-lg hover:shadow-xl`}
