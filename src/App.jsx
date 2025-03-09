@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import Footer from "./Components/Footer";
-import TextForm from './Components/TextForm';
-import TextInput from './Components/TextInput';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import TextForm from './components/TextForm';
+import TextInput from './components/TextInput';
+import Footer from "./components/Footer";
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -26,11 +26,11 @@ function App() {
       <div className="flex flex-col font-light">
         <Navbar mode={mode} toggelMode={toggelMode} />
         <Hero mode={mode} toggelMode={toggelMode} />
-        <hr className="opacity-50" />
+        <hr className="opacity-20" />
         <TextForm mode={mode} toggelMode={toggelMode} />
-        <hr className="opacity-50" />
+        <hr className="opacity-20" />
         <TextInput mode={mode} toggelMode={toggelMode} />
-        <hr className="opacity-50" />
+        <hr className="opacity-20" />
         <Footer mode={mode} toggelMode={toggelMode} />
       </div>
     </>

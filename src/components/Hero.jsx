@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter'; // Import the Typewriter component
-import gif from '../gif4.gif';
+import gif from '../images/gif4.gif';
 
 const Hero = (props) => {
     return (

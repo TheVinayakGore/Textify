@@ -3,7 +3,7 @@ import { jsPDF } from 'jspdf';
 import { Toaster, toast } from 'react-hot-toast';
 import { MdDownload } from 'react-icons/md';
 import { BiSolidEraser } from 'react-icons/bi';
-import logo from '../logo.png'; // Import your logo image
+import logo from '../images/logo.png'; // Import your logo image
 
 const TextInput = (props) => {
     const [title, setTitle] = useState('');
@@ -120,7 +120,7 @@ const TextInput = (props) => {
         const titleLines = doc.splitTextToSize(title, pageWidth);
 
         // Add title lines to the PDF
-        titleLines.forEach((line, index) => {
+        titleLines.forEach((line) => {
             if (yPos > doc.internal.pageSize.getHeight() - (margin + bottomPadding)) {
                 doc.addPage(); // Add a new page if the current page is full
                 yPos = margin + topPadding; // Reset yPos for the new page
