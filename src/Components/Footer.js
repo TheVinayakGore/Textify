@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa6";
 const Footer = (props) => {
     return (
         <>
-            <footer class={`text-lg body-font relative border-t ${props.mode === 'light' ? 'border-zinc-200' : 'border-zinc-800'}`}>
+            <footer class="text-lg body-font">
                 <div class="container px-5 py-20 mx-auto">
                     <div class="flex flex-col text-center w-full mb-12">
                         <h1 id="contact" class="sm:text-4xl text-2xl title-font font-medium mb-4">Contact Us</h1>
