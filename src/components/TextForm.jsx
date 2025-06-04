@@ -39,7 +39,7 @@ export default function TextForm(props) {
 
     return (
         <>
-            <main id="start" className="container py-20 m-auto">
+            <main id="start" className="p-10 lg:p-20 w-full">
                 <Toaster position="top-right" reverseOrder={false} />
                 <h1 className={`text-5xl ${props.mode === 'light' ? 'text-blue-600' : 'text-white'} font-medium mb-1`}>TEXTIFY</h1>
                 <p className={`text-lg font-light ${props.mode === 'light' ? 'text-black' : 'text-zinc-500'} mb-5`}>Word counter | Character counter | Remove extra spaces</p>

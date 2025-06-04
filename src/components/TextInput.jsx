@@ -179,7 +179,7 @@ const TextInput = (props) => {
 
     return (
         <>
-            <main className="container m-auto py-20">
+            <main className="p-10 lg:p-20 w-full">
                 <Toaster position="top-right" reverseOrder={false} />
                 <h1 className={`text-5xl ${props.mode === 'light' ? 'text-blue-600' : 'text-white'} font-medium mb-1`}>
                     TEXT TO PDF
