@@ -31,7 +31,7 @@ function App() {
         <hr className="opacity-20" />
         <TextInput mode={mode} toggelMode={toggelMode} />
         <hr className="opacity-20" />
-        <Footer mode={mode} toggelMode={toggelMode} />
+        <Footer />
       </div>
     </>
   );

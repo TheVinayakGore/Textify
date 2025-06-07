@@ -9,8 +9,8 @@ const Navbar = (props) => {
     <>
       <nav
         className={`flex items-center justify-between m-auto space-x-5 sticky top-0 py-2 px-10 ${
-          props.mode === "light" ? "bg-zinc-200/[0.6]" : "bg-zinc-800/[0.7]"
-        } backdrop-blur-lg w-full transition duration-300 border-b z-50`}
+          props.mode === "light" ? "bg-white/[0.2]" : "bg-zinc-800/[0.2]"
+        } backdrop-blur-sm w-full transition duration-300 shadow z-50`}
       >
         <div className="flex items-center space-x-2">
           <a href="/">
